@@ -1,0 +1,14 @@
+/*
+Theme Name: CoderDojo Charleroi
+Author: Justine Lejeune
+Description: A Twenty-sixteen child theme for CoderDojo Charleroi.
+Template: twentysixteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coderdojocharleroi
+*/
+
+body {
+  background-color: #3f9b88;
+}

@@ -1,0 +1,61 @@
+/*
+ * Global font
+ */
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.custom-logo {
+  max-width: 140px !important;
+}
+
+/*
+ * Dashicon main menu
+ */
+#menu-menu-principal .global>a:before {
+  font-family: 'dashicons';
+  content: "\f319";
+  padding-right: 5px;
+}
+
+#menu-menu-principal .events>a:before {
+  font-family: 'dashicons';
+  content: "\f508";
+  padding-right: 5px;
+}
+
+#menu-menu-principal .contact>a:before {
+  font-family: 'dashicons';
+  content: "\f125";
+  padding-right: 5px;
+}
+
+#menu-menu-principal .local>a:before {
+  font-family: 'dashicons';
+  content: "\f230";
+  padding-right: 5px;
+}
+
+/*
+ * The Event Calendar custom styles
+ */
+
+#tribe-bar-form .tribe-bar-filters {
+  display: none !important;
+}
+
+.events-list.tribe-bar-is-disabled #tribe-events-content-wrapper {
+  margin-left: 0 !important;
+}
+
+body.single-tribe_events .tribe-events-cal-links a.tribe-events-gcal {
+  display: none !important;
+}
+
+body.single-tribe_events .tribe-events-cal-links a.tribe-events-ical {
+  display: none !important;
+}
+
+.tribe-events-ical {
+  display: none !important;
+}

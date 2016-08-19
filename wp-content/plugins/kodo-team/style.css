@@ -1,0 +1,90 @@
+/* ============================================================
+  IMAGE OVERLAY HOVER EFFECTS WITH CSS3 TRANSITIONS
+
+  Tutorial from:
+  http://callmenick.com/post/image-overlay-hover-effects-with-css3-transitions
+============================================================ */
+
+/* ============================================================
+  GLOBAL
+============================================================ */
+.effects {
+  clear:both;
+}
+.effects .img {
+  position: relative;
+  float: left;
+  width: 150px;
+  min-height: 300px;
+  margin-left: 20px;
+  overflow: hidden;
+}
+.effects .img:nth-child(n) {
+  margin-right: 10px;
+}
+.effects .img img {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 150px;
+  height: auto;
+  border-radius: 90%;
+}
+.overlay {
+  display: block;
+  position: absolute;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+a.close-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  background-color: #000;
+  cursor: pointer;
+}
+a.close-overlay.hidden {
+  display: none;
+}
+a.expand {
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 60px;
+  height: 60px;
+  border: solid 5px #fff;
+  text-align: center;
+  color: #fff;
+  line-height: 50px;
+  font-weight: 700;
+  font-size: 30px;
+  border-radius: 30px;
+}
+p.team-name {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: "Open Sans", sans-serif;
+}
+p.team-links {
+  text-align: center;
+}
+i.fa {
+  font-size: 24px;
+}
+.entry-content a.noline {
+  box-shadow: 0 0 0 0;
+}

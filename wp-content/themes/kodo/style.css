@@ -1,0 +1,14 @@
+/*
+Theme Name: Kodo Wallonie
+Author: Justine Lejeune
+Description: A Twenty-sixteen child theme for Kodo Wallonie.
+Template: twentysixteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: kodowallonie
+*/
+
+body {
+  background-color: #db594d;
+}

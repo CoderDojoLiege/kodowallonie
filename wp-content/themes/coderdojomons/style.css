@@ -1,0 +1,14 @@
+/*
+Theme Name: CoderDojo Mons
+Author: Justine Lejeune
+Description: A Twenty-sixteen child theme for CoderDojo Mons.
+Template: twentysixteen
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: coderdojomons
+*/
+
+body {
+  background-color: #4a7ba7;
+}
