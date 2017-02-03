@@ -20,6 +20,17 @@ if ( ! class_exists( 'Tribe__Events__Template__Day' ) ) {
 		const AJAX_HOOK = 'tribe_event_day';
 
 		/**
+		 * The path to the template file used for the view.
+		 * This value is used in Shortcodes/Tribe_Events.php to
+		 * locate the correct template file for each shortcode
+		 * view.
+		 *
+		 * @var string
+		 */
+		public $view_path = 'day/content';
+
+
+		/**
 		 * Set up hooks for this template
 		 *
 		 **/
@@ -158,6 +169,7 @@ if ( ! class_exists( 'Tribe__Events__Template__Day' ) ) {
 					'post_status'  => $post_status,
 					'eventDate'    => $_POST['eventDate'],
 					'eventDisplay' => 'day',
+					'featured'     => tribe( 'tec.featured_events' )->featured_events_requested(),
 				);
 
 				Tribe__Events__Main::instance()->displaying = 'day';
