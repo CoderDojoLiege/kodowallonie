@@ -167,8 +167,6 @@ function kodo_team_members_shortcode1( $atts ) {
           <?php if ( has_post_thumbnail() ) {
         	   the_post_thumbnail( array( 180, 180 ) );
         	} else { ?>
-            <?php $upload_dir = wp_upload_dir(); ?>
-            <?php $upload_dir = $upload_dir['baseurl']; ?>
         	   <img src="<?php echo plugin_dir_url( __FILE__ ); ?>/default-avatar.png" alt="<?php the_title(); ?>" />
         	<?php } ?>
             <p class="team-name">
@@ -249,9 +247,7 @@ function thumbnail_custom_columns($column_name, $id) {
       if( has_post_thumbnail() ) {
         the_post_thumbnail( array( 80, 80 ) );
       } else { ?>
-        <?php $upload_dir = wp_upload_dir(); ?>
-        <?php $upload_dir = $upload_dir['baseurl']; ?>
-        <img src="<?php echo plugin_basename( __FILE__ ); ?>/default-avatar.png" height="80" width="80" />
+        <img src="<?php echo plugin_dir_url( __FILE__ ); ?>/default-avatar.png" height="80" width="80" />
       <?php }
       break;
     case 'firstname':
