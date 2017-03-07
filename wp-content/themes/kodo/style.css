@@ -13,24 +13,107 @@ Text Domain: kodowallonie
 /**
  * Table of Contents:
  *
- * 1.0 - Colors
- * 2.0 - Logo
+ * 1.0 - Fonts
+ * 2.0 - Dashicon main menu
+ * 3.0 - The Event Calendar customizations
+ * 4.0 - Kodo Subsites
  */
 
 /*
- * 1.0 - Colors
+ * 1.0 - Fonts
  */
-
 body {
-  background-color: #db594d;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.custom-logo {
+  max-width: 140px !important;
 }
 
 /*
- * 2.0 - Logo
+ * 2.0 - Dashicon main menu
+ */
+#menu-menu-principal .global > a:before {
+  font-family: 'dashicons';
+  content: '\f319';
+  padding-right: 5px;
+}
+
+#menu-menu-principal .events > a:before {
+  font-family: 'dashicons';
+  content: '\f508';
+  padding-right: 5px;
+}
+
+#menu-menu-principal .contact > a:before {
+  font-family: 'dashicons';
+  content: '\f125';
+  padding-right: 5px;
+}
+
+#menu-menu-principal .local > a:before {
+  font-family: 'dashicons';
+  content: '\f230';
+  padding-right: 5px;
+}
+
+#menu-menu-principal .projects > a:before {
+  font-family: 'dashicons';
+  content: "\f487";
+  padding-right: 5px;
+}
+
+/*
+ * 3.0 - The Event Calendar customizations
  */
 
-.custom-logo-link {
+#tribe-bar-form .tribe-bar-filters {
+  display: none !important;
+}
+
+.events-list.tribe-bar-is-disabled #tribe-events-content-wrapper {
+  margin-left: 0 !important;
+}
+
+body.single-tribe_events .tribe-events-cal-links a.tribe-events-gcal {
+  display: none !important;
+}
+
+body.single-tribe_events .tribe-events-cal-links a.tribe-events-ical {
+  display: none !important;
+}
+
+.tribe-events-ical {
+  display: none !important;
+}
+
+#tribe-events-footer {
+  display: none;
+}
+
+/*
+ * 4.0 - Kodo Subsites
+ */
+
+.kodo-subsites {
+  margin-bottom: 20px;
+}
+
+.kodo-subsites .logo-dojo {
   display: inline-block;
-  text-decoration: none;
-  box-shadow: 0 0 0 0 !important;
+  width: auto;
+  margin-left: 20px;
+  text-align: center;
+}
+
+/*
+ * 5.0 - Formulaires
+ */
+
+span.wpcf7-list-item {
+  display: block;
+}
+
+.wpcf7-submit {
+  margin-top: 25px;
 }
